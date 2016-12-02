@@ -1,6 +1,0 @@
-<snippet>
-    <content><![CDATA[implicit ${1:none}]]></content>
-    <tabTrigger>impl</tabTrigger>
-    <scope>source.modern-fortran</scope>
-    <description>implicit none</description>
-</snippet>

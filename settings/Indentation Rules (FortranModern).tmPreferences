@@ -12,11 +12,12 @@
 			Define a named regex group <re> which matches open
 			and closed bracket pairs using recursion.
 		-->
+			<!-- remove program|subroutine|function|module by Mark-Han-->
 		<key>increaseIndentPattern</key>
 		<string>(?xi)
 	    ^ [^!]* \bthen\b \s* (!.*)? $
 	|   ^ \s* \w+: \s* \b do \b   .* $
-	|   ^ \s* (program|subroutine|function|module|do|block|associate)  \b  .* $
+	|   ^ \s* (do|block|associate)  \b  .* $
 	|   ^ \s* (where|forall) \s* (?&lt;re&gt; \((?: (?&gt; [^()]+ ) | \g&lt;re&gt; )* \) )  \s* $
 	|   ^ \s* (else|else\s*if|elsewhere) \b .* $
 	|   ^ \s* (select\s+case|case) \b .* $
